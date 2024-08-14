@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:features/HomePage.feature",
+        features = "classpath:features",
         glue = "tek.bdd.steps",
-        tags = " @Smoke",
+        tags = "@Smoke",
         dryRun = false
 )
 public class TestRunner {

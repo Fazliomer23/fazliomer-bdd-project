@@ -2,7 +2,7 @@ package tek.bdd.browsers;
 
 import org.openqa.selenium.WebDriver;
 
-public interface IBrowser {
+public interface BaseBrowser {
 
     WebDriver openBrowser(boolean isHeadless);
 }

@@ -43,4 +43,9 @@ public class LoginPageSteps extends SeleniumUtility {
         String actualErrorMessage = getElementText(LoginPageObject.ERROR_MESSAGE);
         Assert.assertEquals("ERROR", actualErrorMessage);
     }
+
+    @Then("close browser")
+    public void closeBrowser() {
+        quitBrowser();
+    }
 }

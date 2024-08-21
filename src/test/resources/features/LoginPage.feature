@@ -22,6 +22,7 @@ Feature: Enter with valid username and password and then login to tek insurance 
     Then enter username "<username>" and password "<password>"
     Then click on sign in button
     Then validate error message "<errorMessage>"
+    Then close browser
     Examples:
       | username    | password        | errorMessage |
       | supervisor3 | tek_supervisor  | ERROR        |

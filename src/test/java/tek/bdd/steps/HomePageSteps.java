@@ -38,8 +38,4 @@ public class HomePageSteps extends SeleniumUtility {
         boolean colorModeOption = isElementIsDisplayed(HomePageObject.COLOR_MOOD_BUTTON);
         Assert.assertTrue("Dark mode color button must be displayed", colorModeOption);
     }
-    @Then("close browser")
-    public void closeBrowser() {
-        quitBrowser();
-    }
 }

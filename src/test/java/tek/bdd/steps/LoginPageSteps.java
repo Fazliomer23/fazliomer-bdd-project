@@ -6,6 +6,8 @@ import org.junit.Assert;
 import tek.bdd.pages.LoginPageObject;
 import tek.bdd.utilities.SeleniumUtility;
 
+import java.util.TreeMap;
+
 public class LoginPageSteps extends SeleniumUtility {
 
     @When("click on login button")
@@ -27,8 +29,9 @@ public class LoginPageSteps extends SeleniumUtility {
 
     }
     @Then("click on sign in button")
-    public void clickOnSignIButton() {
+    public void clickOnSignIButton() throws InterruptedException {
         clickOnElement(LoginPageObject.SIGN_IN_BUTTON);
+        Thread.sleep(5000);
 
     }
     @Then("validate user navigate to Customer Service Portal")

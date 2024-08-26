@@ -1,7 +1,6 @@
 package tek.bdd.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 
 public class CreateAccountPageObject {
     public static final By CREATE_PRIMARY_ACCOUNT_LINK = By.linkText("Create Primary Account");

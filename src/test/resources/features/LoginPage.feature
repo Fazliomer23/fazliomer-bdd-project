@@ -1,4 +1,4 @@
-@Smoke
+@Smoke @Regression
 Feature: Enter with valid username and password and then login to tek insurance app
 
   Background: Open browser and navigate to retail app

@@ -31,7 +31,7 @@ public class CreateAccountSteps extends SeleniumUtility {
         selectFromDropDown(CreateAccountPageObject.GENDER_SELECT, "Male");
         selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Married");
         sendText(CreateAccountPageObject.EMPLOYMENT_STATUS, "Test Engineer");
-        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "07/07/2008");
+        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "07/07/2000");
     }
 
     @Then("click on Create Account button")
@@ -78,7 +78,7 @@ public class CreateAccountSteps extends SeleniumUtility {
         selectFromDropDown(CreateAccountPageObject.GENDER_SELECT, "Male");
         selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Married");
         sendText(CreateAccountPageObject.EMPLOYMENT_STATUS, "Test Engineer");
-        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "07/07/2007");
+        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "07/07/2000");
     }
     @When("validate account error message")
     public void validateAccountErrorMessage() {

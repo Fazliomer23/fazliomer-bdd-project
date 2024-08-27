@@ -1,3 +1,4 @@
+@Smoke @Regression
 Feature: Navigate to login page with valid CSR credentials
 
   Background: User should be able to open browser and sign in with valid username and password
@@ -7,10 +8,12 @@ Feature: Navigate to login page with valid CSR credentials
     Then click on sign in button
     Then click on profile button
 
+    @Scenario_1
   Scenario: Enter valid username and password and then login
     Then validate information in Profile Side Drawer is correct
     Then close browser
 
+  @Scenario_2
   Scenario: Click on Logout button make sure user navigate to home page
     Then click on logout button
     Then close browser

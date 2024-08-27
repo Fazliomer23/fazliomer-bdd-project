@@ -16,6 +16,7 @@ public class CreateAccountPageObject {
     public static final By CREATE_ACCOUNT_BUTTON = By.xpath("//button[text()='Create Account']");
 
     public static final By SIGN_UP_YOUR_ACCOUNT_TITLE = By.xpath("//h2[text()='Sign up your account']");
+
     public static final By USER_FULL_NAME = By.xpath("//div[@id='root']/div/div[2]//div[contains(@class, 'chakra-stack')]/h2[2]");
     public static final By USER_EMAIL_ADDRESS_TITLE = By.xpath("//div[@id='root']/div/div[2]//div[contains(@class, 'chakra-stack')]/h2[3]");
 

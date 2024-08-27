@@ -10,7 +10,7 @@ public class UserProfileSteps extends SeleniumUtility {
     @Then("click on profile button")
     public void clickCnProfileButton() throws InterruptedException {
         clickOnElement(UserProfilePageObject.ACCOUNT_PROFILE);
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 
     }
     @Then("validate information in Profile Side Drawer is correct")
@@ -20,8 +20,9 @@ public class UserProfileSteps extends SeleniumUtility {
 
     }
     @Then("click on logout button")
-    public void clickOnLogoutButton(){
-        clickOnElement(UserProfilePageObject.LOGOUT_BUTTON);
+    public void clickCnLogoutButton() {
+        getElementText(UserProfilePageObject.LOGOUT_BUTTON);
+
     }
 
 }

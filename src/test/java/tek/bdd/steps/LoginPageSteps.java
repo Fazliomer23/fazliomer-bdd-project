@@ -6,8 +6,6 @@ import org.junit.Assert;
 import tek.bdd.pages.LoginPageObject;
 import tek.bdd.utilities.SeleniumUtility;
 
-import java.util.TreeMap;
-
 public class LoginPageSteps extends SeleniumUtility {
 
     @When("click on login button")
@@ -44,7 +42,7 @@ public class LoginPageSteps extends SeleniumUtility {
     @Then("validate error message {string}")
     public void validateErrorMessage(String expectedErrorMessage) {
         String actualErrorMessage = getElementText(LoginPageObject.ERROR_MESSAGE);
-        Assert.assertEquals("ERROR", actualErrorMessage);
+        Assert.assertEquals("ERROR", actualErrorMessage, expectedErrorMessage);
     }
 
     @Then("close browser")

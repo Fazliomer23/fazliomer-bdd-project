@@ -10,6 +10,7 @@ import tek.bdd.base.BaseSetup;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
+import java.util.List;
 
 public class SeleniumUtility extends BaseSetup {
 
@@ -57,6 +58,10 @@ public class SeleniumUtility extends BaseSetup {
         LocalDate localDate = Instant.now().atZone(ZoneId.of("America/New_York")).plusDays(1).toLocalDate();
         DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
         return formatter.format(localDate);
+    }
+
+    public List<WebElement> getElements(By locator){
+        return getWait().until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
     }
 
 }

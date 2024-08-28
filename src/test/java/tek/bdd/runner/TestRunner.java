@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "classpath:features",
         glue = "tek.bdd.steps",
-        tags = "@Scenario_2",
-        dryRun = true
+        tags = "@Accounts_Scenario_1",
+        dryRun = false
 )
 public class TestRunner {
 }

@@ -6,7 +6,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import tek.bdd.base.BaseSetup;
-import java.time.Duration;
+
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class SeleniumUtility extends BaseSetup {
 
@@ -43,4 +46,17 @@ public class SeleniumUtility extends BaseSetup {
         Select select = new Select(element);
         select.selectByVisibleText(visibleText);
     }
+
+    public static String getCurrentDate(){
+        LocalDate localDate = Instant.now().atZone(ZoneId.of("America/New_York")).toLocalDate();
+        DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
+        return formatter.format(localDate);
+    }
+
+    public static String getExpireDate(){
+        LocalDate localDate = Instant.now().atZone(ZoneId.of("America/New_York")).plusDays(1).toLocalDate();
+        DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
+        return formatter.format(localDate);
+    }
+
 }

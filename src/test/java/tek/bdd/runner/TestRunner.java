@@ -8,8 +8,14 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "classpath:features",
         glue = "tek.bdd.steps",
-        tags = "@Accounts_Scenario_1",
-        dryRun = false
+        tags = "@Smoke",
+        dryRun = false,
+        monochrome = true,
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        plugin = {
+                "html:target/cucumber-report/report.html",
+                "pretty",
+        }
 )
 public class TestRunner {
 }

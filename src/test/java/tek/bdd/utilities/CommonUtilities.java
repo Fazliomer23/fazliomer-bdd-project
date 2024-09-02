@@ -7,6 +7,7 @@ public class CommonUtilities {
             Thread.sleep(wait);
         }catch (InterruptedException ex){
             Thread.currentThread().interrupt();
+
         }
     }
 }

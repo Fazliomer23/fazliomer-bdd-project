@@ -11,5 +11,6 @@ public class FireFoxBrowser implements BaseBrowser {
         FirefoxOptions options = new FirefoxOptions();
         if (isHeadless) options.addArguments("--headless");
         return new FirefoxDriver(options);
+
     }
 }

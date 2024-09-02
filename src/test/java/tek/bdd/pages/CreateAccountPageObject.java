@@ -13,6 +13,7 @@ public class CreateAccountPageObject {
     public static final By MARITAL_STATUS_SELECT = By.name("maritalStatus");
     public static final By EMPLOYMENT_STATUS = By.name("employmentStatus");
     public static final By DATE_OF_BIRTH = By.name("dateOfBirth");
+
     public static final By CREATE_ACCOUNT_BUTTON = By.xpath("//button[text()='Create Account']");
 
     public static final By SIGN_UP_YOUR_ACCOUNT_TITLE = By.xpath("//h2[text()='Sign up your account']");

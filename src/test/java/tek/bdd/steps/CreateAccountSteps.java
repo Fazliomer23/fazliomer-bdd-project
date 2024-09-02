@@ -21,6 +21,7 @@ public class CreateAccountSteps extends SeleniumUtility {
     }
 
     @Then("fill up create account form")
+
     public void fillUpCreateAccountForm() {
         String prefix = "Jawid";
         String randomEmail = RandomGenerator.randomEmail(prefix);

@@ -13,6 +13,7 @@ Feature: Testing Account Section
   Then validate Primary Accounts title is exist
   Then close browser
 
+
   @Accounts_Scenario_2
   Scenario: Validate Primary Account Table
     When change item per page to "5"

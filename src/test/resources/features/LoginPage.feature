@@ -17,6 +17,7 @@ Feature: Enter with valid username and password and then login to tek insurance 
     Then validate user navigate to Customer Service Portal
     Then close browser
 
+
   @Scenario_2
   Scenario Outline: Navigate to login page and enter wrong credentials and validate error message as expected
     Then enter username "<username>" and password "<password>"

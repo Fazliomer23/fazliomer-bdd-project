@@ -13,6 +13,7 @@ Feature: Navigate to login page with valid CSR credentials
     Then validate information in Profile Side Drawer is correct
     Then close browser
 
+
   @Scenario_2
   Scenario: Click on Logout button make sure user navigate to home page
     Then click on logout button

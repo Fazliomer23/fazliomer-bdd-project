@@ -27,6 +27,7 @@ public class HomePageSteps extends SeleniumUtility {
         System.out.println(createPrimaryAccountText);
 
     }
+
     @Then("validate Login button is enabled")
     public void validateLoginButtonIsEnabled() {
         boolean loginBtnText = isElementIsEnabled(HomePageObject.LOGIN_BUTTON);

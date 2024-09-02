@@ -37,6 +37,8 @@ public abstract class BaseSetup {
         }
     }
 
+
+
     public void openBrowser(){
         String browserType = properties.getProperty("ui.browser");
         boolean isHeadless = Boolean.parseBoolean(properties.getProperty("ui.browser.headless"));

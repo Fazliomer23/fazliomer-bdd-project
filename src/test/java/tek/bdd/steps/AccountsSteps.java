@@ -17,6 +17,7 @@ public class AccountsSteps extends SeleniumUtility {
 
     }
 
+
     @Then("validate Primary Accounts title is exist")
     public void validatePrimaryAccountsTitleIsExist() {
         String actualPrimaryAccountsTitle = getElementText(AccountsPageObject.PRIMARY_ACCOUNT_TITLE);

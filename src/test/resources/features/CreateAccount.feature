@@ -21,6 +21,7 @@ Feature: Create Primary Account
     Then click on submit button
     Then close browser
 
+
   @Scenario_3
   Scenario: Validate user navigate to Sign up your Account page
     When fill up create account form page

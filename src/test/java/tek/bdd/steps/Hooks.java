@@ -25,5 +25,6 @@ public class Hooks extends SeleniumUtility {
             scenario.attach(screenShot, "image/png", "failed_scenario");
         }
         quitBrowser();
+
     }
 }

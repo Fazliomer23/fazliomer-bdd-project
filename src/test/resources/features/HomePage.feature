@@ -9,3 +9,4 @@ Feature: Validate home page title is exist
     Then validate Login button is enabled
     Then validate color mode button is displayed
     Then close browser
+

@@ -26,6 +26,7 @@ public class LoginPageSteps extends SeleniumUtility {
         sendText(LoginPageObject.PASSWORD_INPUT, password);
 
     }
+
     @Then("click on sign in button")
     public void clickOnSignIButton() throws InterruptedException {
         clickOnElement(LoginPageObject.SIGN_IN_BUTTON);

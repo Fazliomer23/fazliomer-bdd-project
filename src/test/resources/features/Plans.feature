@@ -13,6 +13,7 @@ Feature: Login with credential and validate Plans Page
     Then validate 4 row of the data is present
     Then close browser
 
+
   @Scenario_2
   Scenario:
     Then validate Create Date is today's date in EST Time zone

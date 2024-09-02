@@ -13,3 +13,4 @@ public class EdgeBrowser implements BaseBrowser {
         return new EdgeDriver(options);
     }
 }
+

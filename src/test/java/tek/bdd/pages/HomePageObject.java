@@ -9,3 +9,4 @@ public class HomePageObject {
     public static final By COLOR_MOOD_BUTTON = By.xpath("//button[@aria-label='color-mode']//*[name()='svg']");
 
 }
+

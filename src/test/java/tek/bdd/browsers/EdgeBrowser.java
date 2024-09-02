@@ -10,6 +10,7 @@ public class EdgeBrowser implements BaseBrowser {
 
     public WebDriver openBrowser(boolean isHeadless){
 
+
         EdgeOptions options = new EdgeOptions();
         if (isHeadless) options.addArguments("--headless");
         return new EdgeDriver(options);

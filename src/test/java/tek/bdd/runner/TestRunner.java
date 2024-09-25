@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         tags = "",
         dryRun = false,
         monochrome = true,
-        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        snippets = CucumberOptions.SnippetType.CAMELCASE, //omer
         plugin = {
                 "html:target/cucumber-report/report.html",
                 "pretty",
